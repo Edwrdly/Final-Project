@@ -38,6 +38,12 @@ class _LoginPageState extends State<LoginPage> {
                 hintText: 'Password',
                 obscureText: true, 
               ),
+
+              const SizedBox(height: 10),
+              MyButton(
+                onTap: () {},
+                text: 'Sign In',
+              ),
             ],
           ),
         ),
