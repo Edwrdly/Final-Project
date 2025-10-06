@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import '../components/text_field.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  final Function()? onTap;
+  const LoginPage({super.key, required this.onTap});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -56,7 +57,7 @@ class _LoginPageState extends State<LoginPage> {
           
                     const SizedBox(width: 4),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: widget.onTap,
                       child: Text(
                         "Register now",
                         style: TextStyle(
