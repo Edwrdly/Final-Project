@@ -16,35 +16,59 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.teal,
-      body: Center(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 25.0),
-          child: Column (
-            children: [
-              const SizedBox(height: 50),
-              const Icon(Icons.lock,size: 100),
-              const SizedBox(height: 25),
-              const Text("Hello again, we've missed you!"),
-              const SizedBox(height: 25),
-              MyTextField(
-                controller: emailTextController,
-                hintText: 'Email',
-                obscureText: false
-              ),
-              
-              const SizedBox(height: 10),
-              MyTextField(
-                controller: passwordTextController,
-                hintText: 'Password',
-                obscureText: true, 
-              ),
-
-              const SizedBox(height: 10),
-              MyButton(
-                onTap: () {},
-                text: 'Sign In',
-              ),
-            ],
+      body: SafeArea(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Icon(Icons.lock,size: 100),
+                const SizedBox(height: 25),
+                const Text("Hello again, we've missed you!"),
+                const SizedBox(height: 25),
+                MyTextField(
+                  controller: emailTextController,
+                  hintText: 'Email',
+                  obscureText: false
+                ),
+                
+                const SizedBox(height: 10),
+                MyTextField(
+                  controller: passwordTextController,
+                  hintText: 'Password',
+                  obscureText: true, 
+                ),
+          
+                const SizedBox(height: 10),
+                MyButton(
+                  onTap: () {},
+                  text: 'Sign In',
+                ),
+          
+                const SizedBox(height: 25)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Not a member?",
+                    
+                    ),
+          
+                    const SizedBox(width: 4),
+                    GestureDetector(
+                      onTap: () {},
+                      child: Text(
+                        "Register now",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: Colors.tealAccent  
+                        )
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
