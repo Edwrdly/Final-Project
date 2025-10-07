@@ -27,6 +27,12 @@ class _LoginPageState extends State<LoginPage> {
               children: [
                 const Icon(Icons.lock,size: 100),
 
+                const SizedBox(height: 50),
+                Text(
+                  "INSTAHAM",
+                  style: TextStyle(color: Colors.amber),
+                ),
+
                 const SizedBox(height: 25),
                 Text(
                   "Hello again, we've missed you!",
@@ -59,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                   children: [
                     Text(
                       "Not a member?",
-                      style: TextStyle(color: Colors.grey[700]),
+                      style: TextStyle(color: Colors.white),
                     ),
           
                     const SizedBox(width: 4),
