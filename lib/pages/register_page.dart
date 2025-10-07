@@ -59,12 +59,12 @@ class _RegisterPageState extends State<RegisterPage> {
                   text: 'Sign Up',
                 ),
           
-                const SizedBox(height: 25)
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Already a member?",
-                    style: TextStyle(color: Colors.grey[700]),
+                    style: TextStyle(color: Colors.white),
                     ),
           
                     const SizedBox(width: 4),

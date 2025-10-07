@@ -29,8 +29,8 @@ class _LoginPageState extends State<LoginPage> {
 
                 const SizedBox(height: 25),
                 Text(
-                  "Hello again, we've missed you!"
-                  style: TextStyle(color: Colors.grey[700]),
+                  "Hello again, we've missed you!",
+                  style: TextStyle(color: Colors.white),
                 ),
 
                 const SizedBox(height: 25),
@@ -53,7 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                   text: 'Sign In',
                 ),
           
-                const SizedBox(height: 25)
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

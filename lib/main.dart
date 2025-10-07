@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'pages/login_page.dart';
-import 'package:thewalltute/auth/login_or_register.dart';
+import 'auth/login_or_register.dart';
+
 
 void main() {
   runApp(const MyApp());
