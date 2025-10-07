@@ -64,7 +64,7 @@ class _RegisterPageState extends State<RegisterPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Already a member?",
-                    
+                    style: TextStyle(color: Colors.grey[700]),
                     ),
           
                     const SizedBox(width: 4),
@@ -74,8 +74,8 @@ class _RegisterPageState extends State<RegisterPage> {
                         "Login here",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          color: Colors.tealAccent  
-                        )
+                          color: Colors.tealAccent,  
+                        ),
                       ),
                     ),
                   ],

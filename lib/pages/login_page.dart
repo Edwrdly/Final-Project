@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../components/text_field.dart';
+import '../components/button.dart';
 
 class LoginPage extends StatefulWidget {
   final Function()? onTap;
@@ -25,13 +26,18 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Icon(Icons.lock,size: 100),
+
                 const SizedBox(height: 25),
-                const Text("Hello again, we've missed you!"),
+                Text(
+                  "Hello again, we've missed you!"
+                  style: TextStyle(color: Colors.grey[700]),
+                ),
+
                 const SizedBox(height: 25),
                 MyTextField(
                   controller: emailTextController,
                   hintText: 'Email',
-                  obscureText: false
+                  obscureText: false,
                 ),
                 
                 const SizedBox(height: 10),
@@ -51,8 +57,9 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Not a member?",
-                    
+                    Text(
+                      "Not a member?",
+                      style: TextStyle(color: Colors.grey[700]),
                     ),
           
                     const SizedBox(width: 4),
@@ -63,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           color: Colors.tealAccent  
-                        )
+                        ),
                       ),
                     ),
                   ],
